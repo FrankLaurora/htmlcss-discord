@@ -31,6 +31,12 @@ button:hover {
     transition: background-color 0.4s;
 }
 
+.clearfix::after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
 /* header */
 
 header {
@@ -39,7 +45,7 @@ header {
 }
 
 header .container {
-    padding: 15px;
+    padding: 15px 0;
 }
 
 header .container ul {
@@ -67,7 +73,7 @@ header button {
     position: absolute;
     right: 0;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(0, -50%);
 }
 
 /* hero */
@@ -103,4 +109,60 @@ header button {
 
 .hero section button {
     margin: 0 10px;
+}
+
+/* main section */
+
+main section {
+    padding: 40px 0;
+    color: #23272a;
+    height: 100vh;
+}
+
+.floating-img-left, .text-box-left {
+    float: left;
+    padding-right: 30px;
+}
+
+.floating-img-right, .text-box-right {
+    float: right;    
+    padding-left: 30px;
+}
+
+.large-col {
+    width: calc(65% - 30px)
+}
+
+.narrow-col {
+    width: calc(35% - 30px)
+}
+
+.text-box-left, .text-box-right {
+    margin-top: 35px;
+}
+
+main section h2{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+main section:last-child {
+    text-align: center;
+}
+
+main section:last-child .container h3 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+}
+
+main section:last-child button {
+    padding: 10px 15px;
+    border: 0px;
+    border-radius: 20px;
+    background-color: #8ea1e1;
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    margin-top: 30px ;
 }
