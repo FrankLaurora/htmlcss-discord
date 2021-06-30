@@ -11,3 +11,62 @@
 body {
     font-family: 'Lato', sans-serif;
 }
+
+.container {
+    width: 80%;
+    position: relative;
+    margin: auto;
+}
+
+button {
+    padding: 5px 10px;
+    border: 0px;
+    border-radius: 15px;
+    background-color: #ffffff;
+}
+
+button:hover {
+    background-color: #23272a;
+    color: #ffffff;
+    transition: background-color 0.4s;
+}
+
+/* header0 */
+
+header {
+    background-color: #3161e0;
+    color: #ffffff;
+}
+
+header .container {
+    padding: 15px;
+}
+
+header .container ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header .container ul li {
+    display: inline-block;
+    margin: auto 15px;
+}
+
+header .container li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header .logo{
+    vertical-align: middle;
+}
+
+header button {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
